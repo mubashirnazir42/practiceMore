@@ -19,3 +19,25 @@ def= 'annuu';
 console.log(def);
 
 console.log(guyDocuments[`guysFriends`]);
+
+
+const calc = function(){
+    let arr=[1,2,3,'mubashir']
+    console.log(arr.unshift(2));
+
+}
+
+
+calc()
+
+
+
+const aboutMe={
+    calc :  function(){
+return 'lora'
+    }
+}
+
+console.log(aboutMe['calc']());
+
+console.log('helllo');
