@@ -1,44 +1,22 @@
-'use strict'
-let guyName = 'johns'
-let ladyRollNumber = 12345
-console.log('hi')
-console.log('hi')
+"use strict";
 
-let calcPercent = function (marks) {
-  return (marks / 425) * 100
-}
+const calcAmplitude = function (arr) {
+  let max = arr[0];
+  let min = arr[0];
+  for (let i = 1; i <= arr.length - 1; i++) {
+    if (max < arr[i]) {
+      max = arr[i];
+    }
 
-const guyDocuments = {
-  result: {
-    math: 23,
-    english: '23',
-  },
-  guysFriends: ['yaseen', 'malik'],
-  marks: 234,
-}
+    if (min > arr[i]) {
+      min = arr[i];
+    }
+  }
 
-// def = 'annuu'
-// console.log(def)
+  console.log(max);
+  console.log(min);
 
-console.log(guyDocuments[`guysFriends`])
+  return `amplitude of this array will be ${max - min}`;
+};
 
-const calc = function () {
-  let arr = [1, 2, 3, 'mubashir']
-  console.log(arr.unshift(2))
-}
-
-const mama = []
-
-const myName = function () {}
-
-calc()
-
-const aboutMe = {
-  calc: function () {
-    return 'lora'
-  },
-}
-
-console.log(aboutMe['calc']())
-
-console.log('helllo')
+console.log(calcAmplitude([4, 3, 21, 333]));
